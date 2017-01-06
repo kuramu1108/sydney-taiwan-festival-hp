@@ -2,8 +2,7 @@
 homepage renewal and development for Sydney Taiwan Festival
 
 ## Testing host
-[temporary host](http://stf2017-kuramu1108.ose-pilot.uts.edu.au/)
+[GitHub Pages](https://kuramu1108.github.io/sydney-taiwan-festival-hp/)
 
 ## Requirements
 [Google Doc](https://docs.google.com/document/d/1QPEb9bNtkOv52YiaaWJzWOva734GvKNE9ByQ0JWsOV4/edit)
-
