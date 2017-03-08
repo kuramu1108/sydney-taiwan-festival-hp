@@ -1,16 +1,9 @@
-.block {
-  width: 80px;
-  height: 80px;
-  background: red;
-  position: relative;
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  display: inline-block;
-}
-
-.block:hover {
-  background: pink;
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .logo {
@@ -23,7 +16,7 @@
 }
 
 .navbar-default {
-  background-color: rgba(143, 28, 33, 1);
+  background-color: rgba(143, 28, 33, .25);
   height: 80px;
 }
 
@@ -31,6 +24,14 @@
   width: 100%;
   position: absolute;
   text-align: center;
+}
+
+.navbar-right {
+    padding-right: 100px;
+}
+
+.navbar-left {
+    padding-left: 100px;
 }
 
 .navbar-default .navbar-nav {
@@ -56,4 +57,8 @@
   background: none;
   color: white;
   border-bottom-color: rgba(255,255,255, 1);
+}
+
+.main {
+  padding-top: 100px;
 }
