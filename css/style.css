@@ -1,29 +1,38 @@
 body {
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: cover
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo {
-  align-self: center;
-  height: 50px;
+    align-self: center;
+    height: 50px;
 }
 
 .sns {
-  height: 30px
+    height: 30px
 }
 
 .navbar-default {
-  background-color: rgba(143, 28, 33, .25);
-  height: 80px;
+    background-color: rgba(143, 28, 33, .8);
+    height: 80px;
 }
 
 .navbar-brand {
-  width: 100%;
-  position: absolute;
-  text-align: center;
+    margin-left: 43%;
+    position: absolute;
+    text-align: center;
+    z-index: 0;
 }
 
 .navbar-right {
@@ -35,29 +44,85 @@ body {
 }
 
 .navbar-default .navbar-nav {
-  margin-top: 15px;
-
+    margin-top: 15px;
 }
 
 .navbar-default .navbar-nav > .item > a {
-  color: white;
-  border-bottom: 3px solid transparent;
+    color: white;
+    border-bottom: 3px solid transparent;
+    font-size: 12px;
 }
 
 .navbar-default .navbar-nav > .item > a:hover,
 .navbar-default .navbar-nav > .item > a:focus {
-  color: white;
-  border-bottom-color: rgba(255,255,255, 1);
+    color: white;
+    border-bottom-color: rgba(255,255,255, 1);
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
-  color: white;
-  border-bottom-color: rgba(255,255,255, 1);
+    color: white;
+    border-bottom-color: rgba(255,255,255, 1);
 }
 
 .main {
-  padding-top: 100px;
+    padding-top: 100px;
+}
+
+.grid {
+    margin-left: 25%;
+}
+
+.grid a:hover,
+.grid a:focus {
+    opacity: 0.5;
+}
+
+#grid1 {
+    position: absolute;
+    width: 156px;
+    margin-top: 60px;
+    margin-left: 15px;
+/*    display: inline-block; */
+}
+
+#grid2 {
+    position: absolute;
+    margin-top: 400px;
+    width: 326px;
+    margin-left: 5px;
+/*    display: inline-block; */
+}
+
+#grid3 {
+    position: absolute;
+    margin-top: 284px;
+    margin-left: 341px;
+    width: 158px;
+/*    display: inline-block; */
+}
+
+#grid4 {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 494px;
+/*    display: inline-block; */
+}
+
+#about-banner {
+    background-repeat: no-repeat;
+    background-image: url(../img/thirdprincebanner.png);
+    background-size: cover;
+}
+
+.content-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#commitee {
+    background-color: #D28E8F;
 }

@@ -1,10 +1,32 @@
-<html>
+<!DOCTYPE html>
+
+<html>  
     <head>
         <title>Sydney Taiwan Festival</title>
         <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <style>
+            #firework1 {
+                position: absolute;
+                top: 200px;
+            }
+            
+            #firework2 {
+                width: 150px;
+                position: absolute;
+                right: 50px;
+                top: 30px;
+            }
+            
+            #firework3 {
+                width: 100px;
+                position: absolute;
+                right: 150px;
+                top: 500px;
+            }
+        </style>
     </head>
     <body>
 <!--        navigation bar starts   -->
@@ -17,7 +39,7 @@
                     <li><a href="#"><img class="sns" src="img/twitter.png"></a></li>
                 </ul>
                     
-                <div class="navbar-header">
+                <div class="navbar-brand">
                         <a href="index.html"><img class="logo" src="img/logo.png"></a>
                 </div>
                 
@@ -28,20 +50,27 @@
 -->
                     
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="item active"><a href="#">HOME</a></li>
-                        <li class="item"><a href="#">ABOUT</a></li>
+                        <li class="item active"><a href="index.html">HOME</a></li>
+                        <li class="item"><a href="about.html">ABOUT</a></li>
                         <!--Menu dropdown-->
-                        <li class="item"><a href="#">INFO</a></li>
-                        <li class="item"><a href="#">CONTACT</a></li>
+                        <li class="item"><a href="info.html">INFO</a></li>
+                        <li class="item"><a href="contactus.html">CONTACT</a></li>
                     </ul>
 <!--            </div>-->
         </nav>
 <!--        navigation bar ends   -->
         <div class="container">
             <div class="main">
-                <img src="img/ninegriddesign.png">
+                <div class="grid">
+                    <a href="info.html"><img id="grid4" src="img/grid4.png"></a>
+                    <a href="index.html"><img id="grid1" src="img/grid1.png"></a>
+                    <a href="about.html"><img id="grid2" src="img/grid2.png"></a>
+                    <a href="contactus.html"><img id="grid3" src="img/grid3.png"></a>
+                </div>
+                <img id="firework1" src="img/firework.png">
+                <img id="firework2" src="img/firework.png">
+                <img id="firework3" src="img/firework.png">
             </div>
-        </div>
         </div>
         <footer>
 <!--
