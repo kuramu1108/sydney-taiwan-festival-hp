@@ -1,19 +1,86 @@
-<html>
-  <head>
-    <title>STF - Sponsors</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>Sponsors</h1>
-      </div>
-    </header>
+<!DOCTYPE html>
 
-    <div class="container">
-      
-    </div>
-  </body>
+<html>  
+    <head>
+        <title>STF - Info</title>
+        <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        
+        <style>
+            .pdfobject-container {
+                height: 700px;
+            }
+            
+            .pdfobject { border: 1px solid #666; }
+        </style>
+    </head>
+    <body>
+<!--        navigation bar starts   -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<!--            <div class="container">-->
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#"><img class="sns" src="img/fb.png"></a></li>
+                    <li><a href="#"><img class="sns" src="img/ig.png"></a></li>
+                    <li><a href="#"><img class="sns" src="img/youtube.png"></a></li>
+                    <li><a href="#"><img class="sns" src="img/twitter.png"></a></li>
+                </ul>
+                    
+                <div class="navbar-brand">
+                        <a href="index.html"><img class="logo" src="img/logo.png"></a>
+                </div>
+                
+<!--
+                <div class="navbar-brand">
+                    <a href="index.html"><img class="logo" src="img/logo.png"></a>
+                </div>
+-->
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="item"><a href="index.html">HOME</a></li>
+                        <li class="item"><a href="about.html">ABOUT</a></li>
+                        <!--Menu dropdown-->
+                        <li class="item active"><a href="info.html">INFO</a></li>
+                        <li class="item"><a href="contactus.html">CONTACT</a></li>
+                    </ul>
+<!--            </div>-->
+        </nav>
+<!--        navigation bar ends   -->
+        <div class="container">
+            <div class="main content-container">
+                <div align="center" id="about-banner">
+                    <h1>Program Guide</h1>
+                    
+                </div>
+                <div align="center">
+                    <form method="get" action="bulb/draft.pdf">
+                        <button type="submit" class="btn-info">Download PDF File</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div id="pdf"></div>
+        </div>
+        <footer>
+<!--
+                <div class="row">
+                    <div class="col-xs-12" align="center">
+                        Developed by Po-Hao Chen 2017
+                        <a class="btn btn-social-icon btn-github" href="http://github.com/kuramu1108"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+-->
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.0.201604172/pdfobject.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function() {
+                PDFObject.embed("bulb/draft.pdf", "#pdf");
+            });
+        </script>
+    </body>
 </html>
