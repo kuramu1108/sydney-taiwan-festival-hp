@@ -50,11 +50,10 @@ body {
   border-bottom-color: rgba(255,255,255, 1);
 }
 
-.navbar-default .navbar-nav > .active > a
+.navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: transparent;
-  background: none;
+    background-color: transparent;
   color: white;
   border-bottom-color: rgba(255,255,255, 1);
 }
