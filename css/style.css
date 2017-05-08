@@ -123,7 +123,7 @@ h1 {
 /*    display: inline-block; */
 }
 
-#about-banner {
+#about-bg {
     background-repeat: no-repeat;
     background-image: url(../img/thirdprincebanner.png);
     background-size: cover;
