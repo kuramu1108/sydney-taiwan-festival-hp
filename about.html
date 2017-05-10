@@ -8,7 +8,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
     </head>
-    <body id="about-bg">
+    <body class="about" id="about-bg">
 <!--        navigation bar starts   -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 <!--            <div class="container">-->
@@ -48,8 +48,8 @@
         </div>
         <div class="row">
             <div class="content-container">
-                <a id="taiya" class="anchor"></a>
-                <div>
+                <a id="taiya">sth</a>
+                <div class="information">
                     <p>
                         <h4>The Atayal Dance Company<br>
                             泰雅風情舞蹈團<br><br></h4>
@@ -66,8 +66,8 @@ Atayal is one of sixteen indigenous tribes in Taiwan. Atayal men had to pass the
         </div>
         <div class="row">
             <div class="content-container">
-                <a id="sugar-painting" class="anchor"></a>
-                <div>
+                <a id="sugar-painting"></a>
+                <div class="information">
                     <p>
                         <h4>
                             Sugar Painting<br>
@@ -87,8 +87,8 @@ Master Guo Yong-Xin, who has learned and practiced sugar painting for over thirt
         </div>
         <div class="row">
             <div class="content-container">
-                <a id="face-painting" class="anchor"></a>
-                <div>
+                <a id="face-painting"></a>
+                <div class="information">
                     <p>
                         <h4>
                             Face Painting<br>
@@ -109,8 +109,8 @@ Yan Jhen-Yu, a Taiwanese face-painting master, has dedicated to portrait Taiwan 
         </div>
         <div class="row">
             <div class="content-container">
-                <a id="dough-figurines" class="anchor"></a>
-                <div>
+                <a id="dough-figurines"></a>
+                <div class="information">
                     <p>
                         <h4>
                             Dough Figurine<br>
@@ -137,5 +137,31 @@ The dough master, Huang Jhao-Jhih, is great at applying the traditional dough-ma
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function(){
+                var viewHeight = $(window).height(); // distance to trigger
+                var scrolledFromtop = jQuery(window).scrollTop();
+                if (scrolledFromtop < viewHeight) {
+                    jQuery('body').removeClass();
+                    jQuery('body').addClass('about');
+                }
+                if(scrolledFromtop >= viewHeight && scrolledFromtop < viewHeight * 3){
+                    jQuery('body').removeClass();
+                    jQuery('body').addClass('taiya');
+                }
+                if(scrolledFromtop >= viewHeight * 3 && scrolledFromtop < viewHeight * 5) {
+                    jQuery('body').removeClass();
+                    jQuery('body').addClass('sugar');
+                }
+                if(scrolledFromtop >= viewHeight * 5  && scrolledFromtop < viewHeight * 7) {
+                    jQuery('body').removeClass();
+                    jQuery('body').addClass('face');
+                }
+                if(scrolledFromtop >= viewHeight * 7  && scrolledFromtop < viewHeight * 9) {
+                    jQuery('body').removeClass();
+                    jQuery('body').addClass('dough');
+                }
+            });
+        </script>
     </body>
 </html>

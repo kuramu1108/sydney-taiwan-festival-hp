@@ -123,17 +123,40 @@ h1 {
 /*    display: inline-block; */
 }
 
-#about-bg {
+body.about {
     background-repeat: no-repeat;
     background-image: url(../img/thirdprincebanner.png);
-    background-size: cover;
+/*    background-size: cover;*/
+    background-attachment: fixed;
+    background-position: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+}
+
+body.taiya {
+    background-image: url(../img/taiya.jpg);
+}
+
+body.sugar {
+    background-image: url(../img/sugar-painting.jpg);
+}
+
+body.face {
+    background-image: url(../img/face-painting.jpg);
+}
+
+body.dough {
+    background-image: url(../img/dough-figurines.jpg);
 }
 
 .content-container {
     margin-left: 10%;
     margin-right: 10%;
     padding: 50px;
+    height: 100vh;
+}
+
+.information {
+    margin-top: 100px;
 }
 
 /*#commitee {
@@ -145,9 +168,10 @@ h1 {
 }
 
 .gap {
-    height: 500px;
+    height: 100vh;
 }
 
+/*
 #taiya-img {
     background-repeat: no-repeat;
     background-image: url(../img/taiya.jpg);
@@ -155,10 +179,5 @@ h1 {
     background-position: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
 }
+*/
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -250px;
-    visibility: hidden;
-}
